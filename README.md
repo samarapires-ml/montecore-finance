@@ -67,3 +67,76 @@ The AI investigation layer will analyze outputs from the machine learning models
 ### Human-in-the-Loop
 MonteCore Finance is designed as a decision-support system. AI-generated assessments and recommendations assist financial analysts, while final investigation and intervention decisions remain under human control.
 
+## Current Development Status
+
+MonteCore Finance is being developed incrementally, with the initial implementation focused on building a reliable AML transaction-risk detection foundation.
+
+### Phase 1 — Project Foundation ✅
+
+- Project repository and Python environment configured
+- Modular project structure established
+- Core dependencies and development tooling configured
+- Git-based version control workflow established
+
+### Phase 2 — Data Foundation & Feature Engineering ✅
+
+The initial AML pipeline uses IBM's synthetic Anti-Money Laundering dataset.
+
+#### Dataset
+
+- **5,078,345** raw financial transactions
+- **5,073,168** legitimate transactions
+- **5,177** labelled laundering transactions
+- Original laundering prevalence: approximately **0.102%**
+- Account and entity metadata incorporated for investigation context
+
+#### Modelling Dataset
+
+A development dataset was constructed by retaining all laundering transactions and randomly sampling legitimate transactions:
+
+- **56,924 total transactions**
+- **51,747 legitimate**
+- **5,177 laundering**
+
+The development dataset intentionally contains a higher laundering prevalence than the original dataset. Model evaluation will therefore distinguish development-set performance from performance under the original class distribution.
+
+#### Feature Engineering
+
+Candidate features include:
+
+- Transaction time and day characteristics
+- Weekend activity
+- Cross-currency transactions
+- Same-bank transfers
+- Same-account transfers
+- Same-entity transfers
+- Log-transformed transaction amounts
+- Amount differences
+- Entity activity
+- Entity-pair transaction frequency
+
+The initial leakage-safe baseline uses **15 processed ML features** after categorical encoding.
+
+#### Data Split
+
+Stratified train/validation/test datasets were created:
+
+| Dataset | Transactions |
+| --- | ---: |
+| Training | 39,846 |
+| Validation | 8,539 |
+| Test | 8,539 |
+
+Preprocessing is fitted on the training data only to prevent information leakage.
+
+### Phase 3 — AML Detection Models 🚧
+
+The next development phase will focus on:
+
+- Establishing baseline classification performance
+- Training and comparing AML detection models
+- Evaluating precision, recall, F1-score and PR-AUC
+- Addressing severe class imbalance
+- Selecting an appropriate decision threshold
+- Model explainability and feature importance
+- Saving the selected AML model for integration with the investigation layer

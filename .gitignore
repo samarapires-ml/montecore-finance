@@ -21,3 +21,7 @@ Thumbs.db
 # Model artifacts
 *.pkl
 *.joblib
+
+# Data files
+data/raw/
+data/processed/
