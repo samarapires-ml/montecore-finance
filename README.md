@@ -139,4 +139,43 @@ The next development phase will focus on:
 - Addressing severe class imbalance
 - Selecting an appropriate decision threshold
 - Model explainability and feature importance
-- Saving the selected AML model for integration with the investigation layer
+- Saving the selected AML model for integration with the investigation layer 
+
+### Phase 3 — AML Detection Model ✅
+
+A supervised AML screening pipeline has been developed using the IBM synthetic AML dataset.
+
+Three baseline approaches were evaluated:
+
+- Logistic Regression
+- Random Forest
+- Class-balanced Random Forest
+
+The standard **Random Forest** was selected based on validation performance, particularly recall and PR-AUC.
+
+#### Threshold Optimization
+
+Rather than using the default classification threshold of 0.50, the decision threshold was tuned using the validation dataset.
+
+The selected prototype operating threshold is:
+
+**0.21**
+
+This increases laundering recall while accepting additional false-positive alerts for analyst review.
+
+#### Held-Out Test Performance
+
+| Metric | Score |
+| --- | ---: |
+| Precision | 0.510 |
+| Recall | **0.763** |
+| F1-score | **0.611** |
+| PR-AUC | **0.620** |
+
+On the untouched test set, the model detected:
+
+**592 of 776 labelled laundering transactions.**
+
+Model interpretation was performed using both Random Forest feature importance and permutation importance.
+
+Full modelling methodology, threshold analysis, limitations, and evaluation results are documented in `docs/aml_model.md`.
