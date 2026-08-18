@@ -34,7 +34,27 @@ Rather than replacing financial analysts, MonteCore Finance is designed to opera
 MonteCore Finance is being developed around four core capabilities:
 
 ### 1. Transaction Anomaly Detection
-Detect unusual transaction behaviour using machine learning techniques such as Isolation Forest and density-based anomaly detection.
+
+Detect unusual transaction behaviour using an ensemble of unsupervised machine learning techniques.
+
+The implemented anomaly detection pipeline includes:
+
+- **Isolation Forest** for isolation-based anomaly detection
+- **DBSCAN** for density-based anomaly detection
+- **Behavioural feature engineering** using account-level transaction patterns
+- **Model agreement analysis** to identify consensus anomalies
+- **Anomaly confidence levels** (Low, Medium, High)
+- **Investigation queue generation** for downstream AI investigation
+
+Current results on the transaction anomaly dataset:
+
+- 2,512 transactions analyzed
+- 126 transactions flagged by Isolation Forest
+- 66 transactions identified as DBSCAN noise
+- 49 transactions flagged by both models
+- 143 Medium/High-confidence transactions prioritized for investigation
+
+Anomaly detection identifies unusual behavioural patterns and should not be interpreted as confirmed fraud.
 
 ### 2. Emerging Financial Risk Monitoring
 Analyze changes in customer financial behaviour over time to identify early warning signals before financial risk escalates.
@@ -179,3 +199,4 @@ On the untouched test set, the model detected:
 Model interpretation was performed using both Random Forest feature importance and permutation importance.
 
 Full modelling methodology, threshold analysis, limitations, and evaluation results are documented in `docs/aml_model.md`.
+
