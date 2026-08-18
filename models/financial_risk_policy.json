@@ -1,0 +1,19 @@
+{
+    "early_warning_threshold": 0.45,
+    "risk_bands": {
+        "low": {
+            "min": 0.0,
+            "max_exclusive": 0.3
+        },
+        "medium": {
+            "min": 0.3,
+            "max_exclusive": 0.45
+        },
+        "high": {
+            "min": 0.45,
+            "max": 1.0
+        }
+    },
+    "model_type": "RandomForestClassifier",
+    "risk_score_note": "Model score used for risk ranking. Raw scores have not been probability-calibrated."
+}
