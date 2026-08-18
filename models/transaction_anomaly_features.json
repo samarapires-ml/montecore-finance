@@ -1,0 +1,16 @@
+[
+    "LogTransactionAmount",
+    "TransactionDuration",
+    "LoginAttempts",
+    "AccountBalance",
+    "TransactionHour",
+    "DayOfWeek",
+    "AccountAvgTransactionAmount",
+    "AccountStdTransactionAmount",
+    "AccountTransactionCount",
+    "AmountDeviationFromAccountAvg",
+    "AmountDeviationZScore",
+    "TransactionToBalanceRatio",
+    "TransactionToAccountAvgRatio",
+    "MultipleLoginAttempts"
+]
