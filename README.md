@@ -661,6 +661,8 @@ Tests involving the Mistral and Llama agents require valid watsonx.ai credential
 > **Reproducibility note:** MonteCore Finance is a project prototype for the IBM AI Agent challenge rather than a packaged production banking system. Large third-party datasets and generated model binaries are not distributed through this repository.
 
 ---
+For detailed system-level evaluation results, see [`docs/evaluation.md`](docs/evaluation.md).
+
 
 ## Limitations & Responsible Use
 
@@ -804,10 +806,12 @@ MonteCore addresses this through complementary risk engines, structured evidence
 ## Author
 
 **Samara Pires**
-
 Master's student in Modelling, Data & Predictions at the University of Alberta.
 
-Built as an end-to-end machine learning and agentic-AI portfolio project focused on financial risk intelligence, investigation, and responsible AI-assisted decision support.
+**Hana Antonio**
+DPhil Student at University of Oxford 
+
+Built as an end-to-end machine learning and agentic-AI Project focused on financial risk intelligence, investigation, and responsible AI-assisted decision support for the IBM AI Agent Challenge. 
 
 ---
 
