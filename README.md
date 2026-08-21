@@ -107,53 +107,7 @@ This design keeps machine learning and generative AI in a decision-support role 
 MonteCore Finance connects three independent risk-detection pipelines to a unified investigation and analyst decision-support layer.
 
 ```text
-                        ┌──────────────────────────┐
-                        │     Financial Data       │
-                        └────────────┬─────────────┘
-                                     │
-                 ┌───────────────────┼───────────────────┐
-                 │                   │                   │
-                 ▼                   ▼                   ▼
-        ┌────────────────┐  ┌────────────────┐  ┌────────────────┐
-        │ AML Detection  │  │ Transaction    │  │ Financial Risk │
-        │ Random Forest  │  │ Anomaly Engine │  │ Early Warning  │
-        │                │  │ IF + DBSCAN    │  │ Random Forest  │
-        └───────┬────────┘  └───────┬────────┘  └───────┬────────┘
-                │                   │                   │
-                └───────────────────┼───────────────────┘
-                                    ▼
-                        ┌──────────────────────────┐
-                        │ Unified Case Queue       │
-                        │ & Risk Prioritization    │
-                        └────────────┬─────────────┘
-                                     ▼
-                        ┌──────────────────────────┐
-                        │ Case & Evidence Builder  │
-                        └────────────┬─────────────┘
-                                     ▼
-                        ┌──────────────────────────┐
-                        │ Deterministic            │
-                        │ Investigation Layer      │
-                        └────────────┬─────────────┘
-                                     ▼
-                        ┌──────────────────────────┐
-                        │ Primary AI Investigator  │
-                        │ Mistral Small            │
-                        └────────────┬─────────────┘
-                                     ▼
-                        ┌──────────────────────────┐
-                        │ Second-Look Reviewer     │
-                        │ Llama 3.3                │
-                        └────────────┬─────────────┘
-                                     ▼
-                        ┌──────────────────────────┐
-                        │ Streamlit Analyst        │
-                        │ Dashboard + Case Copilot │
-                        └────────────┬─────────────┘
-                                     ▼
-                        ┌──────────────────────────┐
-                        │ Human Analyst Decision   │
-                        └──────────────────────────┘
+![MonteCore Finance System Architecture](assets/montecore_architecture.png)
 ```
 
 The three detection engines remain independent so that different forms of financial risk can be represented without collapsing them into a single opaque score.
