@@ -60,6 +60,26 @@ st.set_page_config(
 st.markdown(
     """
     <style>
+    /* Darker text inside sidebar form controls */
+section[data-testid="stSidebar"] input {
+    color: #172033 !important;
+    -webkit-text-fill-color: #172033 !important;
+}
+
+section[data-testid="stSidebar"] [data-baseweb="select"] > div {
+    color: #172033 !important;
+}
+
+section[data-testid="stSidebar"] [data-baseweb="select"] span {
+    color: #172033 !important;
+}
+
+/* Keep placeholder text slightly lighter */
+section[data-testid="stSidebar"] input::placeholder {
+    color: #64748b !important;
+    -webkit-text-fill-color: #64748b !important;
+    opacity: 1 !important;
+}
     /* App background */
     .stApp { background: #F6F8FB; }
 
