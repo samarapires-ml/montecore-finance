@@ -17,6 +17,33 @@ It brings three complementary risk signals - **AML detection, transaction anomal
 
 Tech: Python • scikit-learn • pandas • NumPy • IBM watsonx.ai • Mistral • Llama 3.3 • Streamlit
 ---
+## Analyst Dashboard
+
+MonteCore provides an interactive Streamlit investigation workspace that brings risk prioritization, structured evidence, AI-assisted investigation, and conversational case analysis into a single analyst interface.
+
+### Investigation Queue
+
+Analysts can filter and search the unified queue across AML, transaction-anomaly, and financial-risk cases.
+
+![MonteCore Investigation Queue](assets/screenshots/01_investigation_queue.png)
+
+### Case Evidence
+
+Each case exposes the structured evidence used by the investigation workflow, allowing analysts to inspect the underlying model and transaction context.
+
+![MonteCore Case Evidence](assets/screenshots/02_case_evidence.png)
+
+### AI-Assisted Investigation
+
+The AI Review workspace surfaces the primary investigation assessment together with an independent second-look review designed to identify unsupported or overstated claims.
+
+![MonteCore AI Review](assets/screenshots/03_ai_review.png)
+
+### Grounded Case Copilot
+
+Ask MonteCore allows analysts to question the selected case in natural language. Responses are grounded in available case evidence and reviewed before being presented to the analyst.
+
+![MonteCore Case Copilot](assets/screenshots/04_case_copilot.png)
 
 ## Overview
 
@@ -825,30 +852,3 @@ MonteCore Finance is an educational and portfolio prototype. It is not intended 
 
 ---
 
-## Analyst Dashboard
-
-MonteCore provides an interactive Streamlit investigation workspace that brings risk prioritization, structured evidence, AI-assisted investigation, and conversational case analysis into a single analyst interface.
-
-### Investigation Queue
-
-Analysts can filter and search the unified queue across AML, transaction-anomaly, and financial-risk cases.
-
-![MonteCore Investigation Queue](assets/screenshots/01_investigation_queue.png)
-
-### Case Evidence
-
-Each case exposes the structured evidence used by the investigation workflow, allowing analysts to inspect the underlying model and transaction context.
-
-![MonteCore Case Evidence](assets/screenshots/02_case_evidence.png)
-
-### AI-Assisted Investigation
-
-The AI Review workspace surfaces the primary investigation assessment together with an independent second-look review designed to identify unsupported or overstated claims.
-
-![MonteCore AI Review](assets/screenshots/03_ai_review.png)
-
-### Grounded Case Copilot
-
-Ask MonteCore allows analysts to question the selected case in natural language. Responses are grounded in available case evidence and reviewed before being presented to the analyst.
-
-![MonteCore Case Copilot](assets/screenshots/04_case_copilot.png)
