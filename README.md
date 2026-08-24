@@ -16,8 +16,6 @@ It brings three complementary risk signals - **AML detection, transaction anomal
 - **Interactive application:** Streamlit analyst dashboard for case prioritization, evidence review, AI-assisted investigation, and case-specific questioning
 
 **Tech Stack:** Python · scikit-learn · pandas · NumPy · IBM watsonx.ai · Mistral · Llama 3.3 · Streamlit
-
----
 ---
 ## Analyst Dashboard
 
