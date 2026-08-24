@@ -7,6 +7,16 @@
 It brings three complementary risk signals — **AML detection, transaction anomaly detection, and financial early-warning scoring** - into a unified investigation workflow where analysts can prioritize cases, inspect evidence, generate AI-assisted assessments, and ask grounded questions about individual cases.
 
 ---
+## Project Snapshot
+
+- **3 complementary risk engines:** AML detection, transaction anomaly detection, and financial early-warning
+- **Multi-agent investigation:** Mistral primary investigator + Llama 3.3 independent second-look reviewer
+- **Grounded Case Copilot:** Natural-language investigation over structured case evidence
+- **Human-in-the-loop design:** AI outputs support analyst decisions rather than making autonomous financial determinations
+- **Interactive application:** Streamlit analyst dashboard for case prioritization, evidence review, AI-assisted investigation, and case-specific questioning
+
+**Tech:** Python • scikit-learn • pandas • NumPy • IBM watsonx.ai • Mistral • Llama 3.3 • Streamlit
+---
 
 ## Overview
 
