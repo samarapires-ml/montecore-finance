@@ -114,11 +114,10 @@ This design keeps machine learning and generative AI in a decision-support role 
 
 ## System Architecture
 
-MonteCore Finance connects three independent risk-detection pipelines to a unified investigation and analyst decision-support layer.
+MonteCore Finance connects three independent risk-detection pipelines to a unified investigation and analyst decision-support layer. The three detection engines remain independent so that different forms of financial risk can be represented without collapsing them into a single opaque score.
 
 ![MonteCore Finance System Architecture](assets/montecore_architecture.png)
 
-The three detection engines remain independent so that different forms of financial risk can be represented without collapsing them into a single opaque score.
 ---
 
 ## Agentic Investigation Workflow
