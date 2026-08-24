@@ -196,9 +196,9 @@ The generated answer is reviewed before being presented to the analyst.
 
 The orchestration layer isolates failures at the AI stages.
 
-If the primary AI service is unavailable, MonteCore still preserves and returns the deterministic investigation result rather than losing the entire investigation workflow.
+If the primary AI service is unavailable, MonteCore still preserves and returns the deterministic investigation result rather than losing the entire investigation workflow. This allows the core evidence and rule-based decision-support layer to remain usable independently of generative AI availability.
 
-This allows the core evidence and rule-based decision-support layer to remain usable independently of generative AI availability.
+
 ---
 
 ## Machine Learning Results
