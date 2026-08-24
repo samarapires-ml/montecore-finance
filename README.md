@@ -4,7 +4,7 @@
 
 **MonteCore Finance** is an end-to-end financial risk intelligence and investigation platform that combines machine learning, anomaly detection, agentic AI, and human-in-the-loop decision support.
 
-It brings three complementary risk signals — **AML detection, transaction anomaly detection, and financial early-warning scoring** - into a unified investigation workflow where analysts can prioritize cases, inspect evidence, generate AI-assisted assessments, and ask grounded questions about individual cases.
+It brings three complementary risk signals - **AML detection, transaction anomaly detection, and financial early-warning scoring** - into a unified investigation workflow where analysts can prioritize cases, inspect evidence, generate AI-assisted assessments, and ask grounded questions about individual cases.
 
 ---
 ## Project Snapshot
