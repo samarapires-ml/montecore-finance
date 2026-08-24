@@ -15,7 +15,9 @@ It brings three complementary risk signals - **AML detection, transaction anomal
 - **Human-in-the-loop design:** AI outputs support analyst decisions rather than making autonomous financial determinations
 - **Interactive application:** Streamlit analyst dashboard for case prioritization, evidence review, AI-assisted investigation, and case-specific questioning
 
-**Tech: Python • scikit-learn • pandas • NumPy • IBM watsonx.ai • Mistral • Llama 3.3 • Streamlit**
+**Tech Stack**
+
+Python · scikit-learn · pandas · NumPy · IBM watsonx.ai · Mistral · Llama 3.3 · Streamlit
 ---
 ## Analyst Dashboard
 
