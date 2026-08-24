@@ -16,7 +16,8 @@ It brings three complementary risk signals - **AML detection, transaction anomal
 - **Interactive application:** Streamlit analyst dashboard for case prioritization, evidence review, AI-assisted investigation, and case-specific questioning
 
 **Tech Stack:** Python · scikit-learn · pandas · NumPy · IBM watsonx.ai · Mistral · Llama 3.3 · Streamlit
----
+
+
 ## Analyst Dashboard
 
 MonteCore provides an interactive Streamlit investigation workspace that brings risk prioritization, structured evidence, AI-assisted investigation, and conversational case analysis into a single analyst interface.
