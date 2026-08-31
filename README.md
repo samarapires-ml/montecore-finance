@@ -852,4 +852,3 @@ Built as an end-to-end machine learning and agentic-AI Project focused on financ
 MonteCore Finance is an educational and portfolio prototype. It is not intended for production financial decision-making, regulatory compliance, or use as a substitute for qualified human investigation.
 
 ---
-
